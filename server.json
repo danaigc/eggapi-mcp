@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.eggapi/eggapi",
+  "title": "EggAPI",
+  "description": "Generate AI images and videos from your agent: list models, start jobs, and fetch the results.",
+  "version": "1.0.0",
+  "websiteUrl": "https://eggapi.ai/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.eggapi.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your EggAPI API key>, created at https://eggapi.ai/dashboard/keys",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
